@@ -70,7 +70,7 @@ def initial_color():
         pixels[p]=(0,0,255)
 
 def blue_white():
-    for c in range(0,255):
+    for c in range(0,255,10):
         x = 255 - c
         for p in hexagon[0]:
             pixels[p]=(x,x,255)
