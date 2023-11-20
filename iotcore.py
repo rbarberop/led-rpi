@@ -68,6 +68,24 @@ def initial_color():
         pixels[p]=(255,255,255)
     for p in hexagon[5]:
         pixels[p]=(0,0,255)
+
+def blue_white():
+    for c in range(0,255):
+        x = 255 - c
+        for p in hexagon[0]:
+            pixels[p]=(x,x,255)
+        for p in hexagon[1]:
+            pixels[p]=(c,c,255)
+        for p in hexagon[2]:
+            pixels[p]=(x,x,255)
+        for p in hexagon[3]:
+            pixels[p]=(c,c,255)
+        for p in hexagon[4]:
+            pixels[p]=(x,x,255)
+        for p in hexagon[5]:
+            pixels[p]=(c,c,255)
+        pixels.show()
+        time.sleep(0.001)
         
     
 def wheel(pos):
@@ -104,4 +122,5 @@ def rainbow_cycle(wait):
 
 initial_color()
 pixels.show()
+blue_white()
 
