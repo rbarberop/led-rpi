@@ -16,19 +16,33 @@ num_pixels = 60
 
 # Prepare the 'Hexagon'. Array with six elements (one per side).
 # then each element (side) is an array that contains the LEDs on that side 
-hexagon = []
+side0 = []
+side1 = []
+side2 = []
+side3 = []
+side4 = []
+side5 = []
+
 for i in range(1,10):
-    hexagon[0].append(i)
+    side0.append(i)
 for i in range(11,20):
-    hexagon[1].append(i)
+    side1.append(i)
 for i in range(21,30):
-    hexagon[2].append(i)
+    side2.append(i)
 for i in range(31,40):
-    hexagon[3].append(i)
+    side3.append(i)
 for i in range(41,50):
-    hexagon[4].append(i)
+    side4.append(i)
 for i in range(51,60):
-    hexagon[5].append(i)
+    side5.append(i)
+
+hexagon = []
+hexagon.append(side0)
+hexagon.append(side1)
+hexagon.append(side2)
+hexagon.append(side3)
+hexagon.append(side4)
+hexagon.append(side5)
 
 # The order of the pixel colors - RGB or GRB. Some NeoPixels have red and green reversed!
 # For RGBW NeoPixels, simply change the ORDER to RGBW or GRBW.
