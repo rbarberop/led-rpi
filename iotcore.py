@@ -55,17 +55,17 @@ pixels = neopixel.NeoPixel(
 def initial_color():
     # Blue and white alternating
     for p in hexagon[0]:
-        pixel[p]=(255,255,255)
+        pixels[p]=(255,255,255)
     for p in hexagon[1]:
-        pixel[p]=(0,0,255)
+        pixels[p]=(0,0,255)
     for p in hexagon[2]:
-        pixel[p]=(255,255,255)
+        pixels[p]=(255,255,255)
     for p in hexagon[3]:
-        pixel[p]=(0,0,255)
+        pixels[p]=(0,0,255)
     for p in hexagon[4]:
-        pixel[p]=(255,255,255)
+        pixels[p]=(255,255,255)
     for p in hexagon[5]:
-        pixel[p]=(0,0,255)
+        pixels[p]=(0,0,255)
         
     
 def wheel(pos):
@@ -98,7 +98,8 @@ def rainbow_cycle(wait):
         pixels.show()
         time.sleep(wait)
 
+# Main program
 
-while True:
-    # rainbow_cycle(0.0001)  # rainbow cycle with .1ms delay per step
-    initial_color()
+initial_color()
+pixels.show()
+
