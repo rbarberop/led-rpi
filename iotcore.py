@@ -85,7 +85,7 @@ def blue_white():
         for p in hexagon[5]:
             pixels[p]=(c,c,255)
         pixels.show()
-        time.sleep(0.001)
+        time.sleep(0.1)
     for c in range(255,0,-10):
         x = 255 - c
         for p in hexagon[0]:
@@ -101,7 +101,7 @@ def blue_white():
         for p in hexagon[5]:
             pixels[p]=(c,c,255)
         pixels.show()
-        time.sleep(0.001)
+        time.sleep(0.1)
         
     
 def wheel(pos):
