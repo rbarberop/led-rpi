@@ -23,17 +23,17 @@ side3 = []
 side4 = []
 side5 = []
 
-for i in range(1,11):
+for i in range(0,9):
     side0.append(i)
-for i in range(11,21):
+for i in range(10,19):
     side1.append(i)
-for i in range(21,31):
+for i in range(20,29):
     side2.append(i)
-for i in range(31,41):
+for i in range(30,39):
     side3.append(i)
-for i in range(41,51):
+for i in range(40,49):
     side4.append(i)
-for i in range(51,61):
+for i in range(50,59):
     side5.append(i)
 
 hexagon = []
