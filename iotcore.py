@@ -44,8 +44,6 @@ hexagon.append(side3)
 hexagon.append(side4)
 hexagon.append(side5)
 
-print(hexagon)
-
 # The order of the pixel colors - RGB or GRB. Some NeoPixels have red and green reversed!
 # For RGBW NeoPixels, simply change the ORDER to RGBW or GRBW.
 ORDER = neopixel.GRB
