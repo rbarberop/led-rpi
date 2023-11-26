@@ -49,7 +49,7 @@ hexagon.append(side5)
 ORDER = neopixel.GRB
 
 pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.1, auto_write=False, pixel_order=ORDER
+    pixel_pin, num_pixels, brightness=0.3, auto_write=False, pixel_order=ORDER
 )
 
 def initial_color():
