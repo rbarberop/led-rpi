@@ -23,17 +23,17 @@ side3 = []
 side4 = []
 side5 = []
 
-for i in range(0,10):
+for i in range(3,10):
     side0.append(i)
 for i in range(10,20):
     side1.append(i)
-for i in range(20,30):
+for i in range(20,29):
     side2.append(i)
-for i in range(30,40):
+for i in range(29,38):
     side3.append(i)
-for i in range(40,50):
+for i in range(38,48):
     side4.append(i)
-for i in range(50,60):
+for i in range(48,57):
     side5.append(i)
 
 hexagon = []
@@ -49,7 +49,7 @@ hexagon.append(side5)
 ORDER = neopixel.GRB
 
 pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
+    pixel_pin, num_pixels, brightness=0.1, auto_write=False, pixel_order=ORDER
 )
 
 def initial_color():
