@@ -23,13 +23,13 @@ side3 = []
 side4 = []
 side5 = []
 
-for i in range(2,10):
+for i in range(2,11):
     side0.append(i)
 for i in range(11,21):
     side1.append(i)
 for i in range(20,29):
     side2.append(i)
-for i in range(29,38):
+for i in range(30,39):
     side3.append(i)
 for i in range(38,48):
     side4.append(i)
