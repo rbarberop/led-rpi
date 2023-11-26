@@ -27,11 +27,11 @@ for i in range(2,11):
     side0.append(i)
 for i in range(11,22):
     side1.append(i)
-for i in range(21,29):
+for i in range(21,30):
     side2.append(i)
-for i in range(30,40):
+for i in range(30,39):
     side3.append(i)
-for i in range(40,48):
+for i in range(39,48):
     side4.append(i)
 for i in range(48,58):
     side5.append(i)
