@@ -8,6 +8,6 @@ while True:
     for j in range (1,8):
       pixels[i*j]=(5,0,0)
       pixels.show()
-      sleep(0.02)
+      sleep(0.2)
       pixels[i*j]=(0,0,0)
 
