@@ -2,7 +2,10 @@ from time import sleep
 import board
 import neopixel
 from ledutils.tomatrix import tomatrix
+from ledutils.drawframe import drawframe
 pixels = neopixel.NeoPixel(board.D18, 256, auto_write=False)
+
+drawframe(pixels,(0,0,5))
 
 while True:
   for i in range (0,32):
