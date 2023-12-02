@@ -2,11 +2,19 @@
 
 from .tomatrix import tomatrix
 
-a = [[0,1,1,1,0],[1,0,0,0,0,1],[1,1,1,1,1],[1,0,0,0,0,1],[1,0,0,0,0,1]]
+alphabet = {}
 
-def letter(character,col,color):
-    for i in range(col, col+5):
-        if a[1][i] == 0 :
-            pixel(tomatrix(i,2))=(0,0,0)
+alphabet["a"] = [[0,1,1,1,0],[1,0,0,0,1],[1,1,1,1,1],[1,0,0,0,1],[1,0,0,0,1]]
+alphabet["b"] = [[1,1,1,1,0],[1,0,0,0,1],[1,1,1,1,0],[1,0,0,0,1],[1,1,1,1,0]]
+alphabet["c"] = [[0,1,1,1,1],[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[0,1,1,1,1]]
+alphabet["d"] = [[1,1,1,1,0],[1,0,0,0,1],[1,0,0,0,1],[1,0,0,0,1],[1,1,1,1,0]]
+alphabet["e"] = [[1,1,1,1,1],[1,0,0,0,0],[1,1,0,0,0],[1,0,0,0,0],[1,1,1,1,1]]
+
+def letter(pixel, character,col,color):
+    for i in range(0,5):
+      for j in range(0,5):
+        if alphabet[character][i][j] == 0 :
+            pixel[tomatrix(j+col,i+2)]=(0,0,0)
         else:
-            pixel(tomatrix(i,2))=color
+            pixel[tomatrix(j+col,i+2)]=color
+    pixel.show()
