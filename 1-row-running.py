@@ -1,7 +1,7 @@
 from time import sleep
 import board
 import neopixel
-import ledutils.tomatrix as tomatrix
+from ledutils.tomatrix import tomatrix.tomatrix as tomatrix
 pixels = neopixel.NeoPixel(board.D18, 256, auto_write=False)
 
 while True:
