@@ -1,11 +1,11 @@
 # This function draws a frame in the color passed as argument
 
 def drawframe(pixels, color):
-    from tomatrix import tomatrix
-    for i in (0,32):
+    from .tomatrix import tomatrix
+    for i in range(0,32):
         pixels[tomatrix(i,0)]=color
         pixels[tomatrix(i,7)]=color
-    for j in (0,8):
+    for j in range(0,8):
         pixels[tomatrix(0,j)]=color
         pixels[tomatrix(31,j)]=color
     pixels.show()
