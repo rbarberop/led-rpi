@@ -6,8 +6,11 @@ from time import sleep
 
 
 def banner(pixel, line, color):
-  for a in range (32,-5,-1):
-    smallletter(pixel, line[0], a, (0,255,0))
+  for col in range (32,-5*len(line),-1):
+    letterpos = 1
+    for letter in line:
+      smallletter(pixel, letter, (col*letterpos)+1, (0,255,0))
+      letterpos = letterpos + 1
     sleep(0.1)
     pixel.fill((0,0,0))
 
