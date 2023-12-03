@@ -16,4 +16,4 @@ def smallletter(pixel, character,col,color):
       for j in range(0,4):
         if alphabet[character.lower()][i][j] == 1 :
             drawpixel(pixel, j+col, i+2, color)
-    pixel.show()
+

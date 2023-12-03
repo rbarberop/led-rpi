@@ -11,6 +11,7 @@ def banner(pixel, line, color):
     for letter in line:
       smallletter(pixel, letter, col+(5*letterpos)+1, (0,255,0))
       letterpos = letterpos + 1
+    pixel.show()
     sleep(0.08)
     pixel.fill((0,0,0))
 
