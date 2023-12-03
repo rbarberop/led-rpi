@@ -1,6 +1,6 @@
 # 5 x 5 font definition
 
-from .tomatrix import tomatrix
+from .drawpixel import drawpixel
 
 alphabet = {}
 
@@ -14,8 +14,6 @@ alphabet["f"] = [[1,1,1,1],[1,0,0,0],[1,1,1,0],[1,0,0,0],[1,0,0,0]]
 def smallletter(pixel, character,col,color):
     for i in range(0,5):
       for j in range(0,4):
-        if alphabet[character][i][j] == 0 :
-            pixel[tomatrix(j+col,i+2)]=(0,0,0)
-        else:
-            pixel[tomatrix(j+col,i+2)]=color
+        if alphabet[character.lower()][i][j] == 1 :
+            drawpixel(pixel, j+col, i+2, color)
     pixel.show()
