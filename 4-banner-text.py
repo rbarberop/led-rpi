@@ -9,4 +9,4 @@ from ledutils.banner import banner
 pixels = neopixel.NeoPixel(board.D18, 256, brightness=0.025, auto_write=False)
 from random import randint
 
-banner(pixels, "A", (0,255,0))
+banner(pixels, "a", (0,255,0))
