@@ -1,4 +1,6 @@
 # 5 x 5 font definition
+# Fonts taken from https://fontstruct.com/fontstructions/show/1404171/cg-pixel-4x5
+
 
 from .drawpixel import drawpixel
 
